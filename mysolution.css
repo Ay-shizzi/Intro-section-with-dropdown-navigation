@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root{
+    ---Almost-White: hsl(0, 0%, 98%);
+    ---Medium-Gray: hsl(0, 0%, 41%);
+    ---Almost-Black: hsl(0, 0%, 8%);
+}
+body{
+    background-color: var(---Almost-White);
+    font-family: 'Epilogue', sans-serif;
+    min-height: 100vh;
+}
+
+/* nav-bar start */
+
+/* .container-fluid{
+    margin: auto 60px;
+} */
+.fa-chevron-down{
+    transform: rotate(0deg);
+    transition: all .3s ease-in;
+}
+.open{
+    transform: rotate(180deg);
+    transition: all .3s ease-in;
+}
+.logo-img{
+    width: 70px;
+}
+.navbar-nav, .dropdown-menu, .navbar{
+    font-size: 12px;
+}
+.navbar{
+    margin-bottom: auto;
+}
+.navbar-nav{
+    align-items: center;
+}
+.nav-link:hover{
+    color: var(---Almost-Black);
+}
+.fa-chevron-down{
+    font-size: 10px;
+}
+.login{
+    margin-right: 20px;
+}
+.btn-dark{
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+
+/* nav-bar end */
+
+/* main-page start */
+
+.row-cols-2{
+    margin-top: 50px;
+}
+.text-wrap{
+    margin: 5% auto;
+}
+.text-header{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+}
+span{
+    display: block;
+}
+.text-paragraph{
+    margin: 5% 0;
+    color: var(---Medium-Gray);
+}
+.btn-dark:hover{
+    border: 1px solid var(---Almost-Black);
+    background-color: transparent;
+    color: var(---Almost-Black);
+}
+.client-logo{
+    padding: 0;
+}
+.client-logo_wrapper{
+    text-align: start;
+}
+.hero-wrapper{
+    text-align: center;
+}
+.hero-wrapper{
+    background: url(./images/image-hero-desktop.png) top no-repeat;
+    background-size: 380px;
+}
+.icon-img{
+    margin-right: 15px;
+}
+.client-logo_wrapper{
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1200px){
+    .hero-wrapper{
+        background-size: 330px;
+    }
+}
+@media screen and (max-width: 992px){
+    .hero-wrapper{
+        background-size: 360px;
+    }
+    .client-logo_wrapper{
+        margin-top: 20px;
+    }
+    .sidebar{
+        background-color: var(---Almost-White);
+        padding: 20px 50px;
+    }
+    .btn-close{
+        margin-left: auto;
+    }
+    .shadow{
+        box-shadow: 0 0 0 var(---Almost-White)!important;
+    }
+    .dropdown-menu{
+        background-color: var(---Almost-White);
+    }
+    .navbar-nav{
+        align-items: start;
+    }
+    .navbar{
+        justify-content: center !important;
+        flex-direction: column;
+    }
+    .login{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .hero-wrapper{
+        background: url(./images/image-hero-mobile.png) no-repeat;
+        background-size: contain;
+        height: 450px;
+        order: 1;
+        text-align: center;
+    }
+    .text-wrap{
+        order: 2;
+        text-align: center;
+    }
+    span{
+        display: inline;
+    }
+    .text-header{
+        font-size: 50px;
+    }
+    .button-wrapper{
+        margin: 50px auto;
+    }
+}
+@media screen and (max-width: 576px){
+    .hero-wrapper{
+        background-position: center;
+        width: 90%;
+        margin: auto;
+        height: 300px;
+        margin-top: 35px;
+    }
+    .text-header{
+        font-size: 40px;
+    }
+}
